@@ -3,6 +3,7 @@ body {
   font-family: "Poppins", sans-serif;
   background: -webkit-gradient(linear, left top, right top, from(#fff0f0), color-stop(60%, #fff0f0), color-stop(60%, white));
   background: linear-gradient(to right, #fff0f0 0%, #fff0f0 60%, white 60%);
+  max-width: 1200px;
 }
 
 a {
