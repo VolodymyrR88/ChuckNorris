@@ -8,42 +8,106 @@
   </head>
   <body>
     <div class="wraper">
-        <header id="home" class="header">
-			  <div class="header-container -container">
-            <div class="home-page">
-              <div class="home-title">
-                <h1>
-                  Hello visitor! <br />
-                  You are on my web site and you know who I am!
-                </h1>
-              </div>
-              <div class="home-img">
-                <img
-                  src="img/ChuckNorris.png"
-                  alt="ChuckNorris"
-                  width="500"
-                  height="600"
-                />
-              </div>
+      <header id="home" class="header">
+        <div class="header-container -container">
+          <div class="home-page">
+            <div class="home-title">
+              <h1>
+                Hello visitor! <br />
+                You are on my web site and you know who I am!
+              </h1>
             </div>
-          <nav class="menu">
-            <div class="menu-nav">
-                <a class="nav-title"href="#home">CHUCK NORRIS</a>     
-                <ul class="nav-list">
-                  <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                  <li class="nav-item"><a class="nav-link" href="#form">Let's get to know you</a></li>
-                  <li class="nav-item"><a class="nav-link" href="">Hear I am</a></li>
-                  <li class="nav-item"><a class="nav-link" href="">My favorite pictures</a></li>
-                  <li class="nav-item"><a class="nav-link" href="">Read about my favorite movies</a></li>
-                  <li class="nav-item"><a class="nav-link" href="">Look at my favorite movie</a></li>
-                  <li class="nav-item"><a class="nav-link" href="">Something else</a></li>
-                </ul>
-					</div>
+            <div class="home-img">
+              <img src="img/ChuckNorris.png" alt="ChuckNorris" />
             </div>
-          </nav>
-        </header>
-        <div id="form" class="form-meet -container"></div>
+          </div>
+          <div class="navigation-menu">
+            <nav class="menu">
+              <div class="menu-title">
+                <a class="menu-title-link" href="#home">CHUCK NORRIS</a>
+              </div>
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <a class="menu-link" href="#home">Home</a>
+                </li>
+                <li class="menu-item">
+                  <a class="menu-link" href="#form">Let's get to know you</a>
+                </li>
+                <li class="menu-item">
+                  <a class="menu-link" href="#aboutMe">Hear I am</a>
+                </li>
+                <li class="menu-item">
+                  <a class="menu-link" href="">My favorite pictures</a>
+                </li>
+                <li class="menu-item">
+                  <a class="menu-link" href="">Read about my favorite movies</a>
+                </li>
+                <li class="menu-item">
+                  <a class="menu-link" href="">Look at my favorite movie</a>
+                </li>
+                <li class="menu-item">
+                  <a class="menu-link" href="">Something else</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <div id="form" class="form-container">
+        <div class="form-container -container">
+          <div class="form-page">
+            <div class="form-title">
+              <h2 class="title">Let's get to know you</h2>
+            </div>
+            <div class="form-table">
+              <form name="feedback" method="POST" action="form.php">
+                <p class="form-row">
+                  <input
+                    class="row-field"
+                    type="text"
+                    name="name"
+                    placeholder="NAME"
+                  />
+                </p>
+                <p class="form-row">
+                  <input
+                    class="row-field"
+                    type="text"
+                    name="email"
+                    placeholder="EMAIL"
+                  />
+                </p>
+                <p class="form-row">
+                  Choose your favorit actor: <br />
+                  <select class="select-field" name="actor">
+                    <optgroup label="Best actor">
+                      <option value="cn" selected>Chuck the best!</option>
+                      <option value="CN">Of course Chuck Norris</option>
+                      <option value="Ch">
+                        Are you kidding me? Only Chuck Norris!
+                      </option>
+                    </optgroup>
+                  </select>
+                </p>
+                <p class="form-row">
+                  <textarea
+                    class="text-field"
+                    name="message"
+                    placeholder="Write me something"
+                  ></textarea>
+                </p>
+                <input class="button" type="submit" name="send" value="SEND" />
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
+      <div id="aboutMe" class="aboutMe-container">
+        <div class="aboutMe-container -container">
+          <div class="aboutMe-page"></div>
+        </div>
+      </div>
+    </div>
     <script src="js/script.js"></script>
   </body>
 </html>
