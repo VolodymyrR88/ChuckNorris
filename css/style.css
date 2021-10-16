@@ -1,109 +1,145 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 body {
   font-family: "Poppins", sans-serif;
   background: -webkit-gradient(linear, left top, right top, from(#fff0f0), color-stop(60%, #fff0f0), color-stop(60%, white));
   background: linear-gradient(to right, #fff0f0 0%, #fff0f0 60%, white 60%);
-  font-size: 14px;
+  font-size: 18px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: inherit;
-  font-size: inherit;
-}
-
+/*-----------обнуление ссылок*/
 a {
   text-decoration: none;
 }
 
+/*---------контейнер*/
+.-container {
+  max-width: 1400px;
+}
+
+/*-------------------Media*/
+/*@media screen and (min-width: 320px) and (max-width: 479px) {
+	.header-container.-container {max-width: 120px;
+}
+	.navigation-menu{
+		min-width: 400px;
+		margin: 0;
+		font-size: 10px;
+	}
+	.home-img {
+	margin-top: 200px;
+}
+}
+@media screen and (min-width: 480px) and (max-width: 639px) {
+	.header-container.-container {max-width: 480px;
+}
+	.navigation-menu{
+		font-size: 12px;
+		min-width: 400px;
+		margin: 0;
+	}
+	.home-img {
+	margin-top: 200px;
+
+}
+}
+@media screen and (min-width: 640px) and (max-width: 767px) {
+	.header-container.-container {max-width: 640px;
+}
+	.navigation-menu{
+		font-size: 12px;
+		min-width: 400px;
+		margin: 0;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 799px) {
+	.header-container.-container {
+		max-width: 768px;
+	}
+	.navigation-menu{
+		font-size: 12px;
+		min-width: 400px;
+		margin: 0;
+	}
+}
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+	.header-container.-container {
+		max-width: 780px;
+	}
+	.navigation-menu{
+		min-width: 400px;
+		margin: 0;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1681px) {
+	.header-container.-container {
+		max-width: 1400px;
+}
+}*/
+/*-------------------Полотно*/
 .wraper {
   overflow: hidden;
 }
 
-.-container {
-  max-width: 1350px;
-  margin: 50px;
-}
-
+/*----------------------------------------------------страница 1:Home*/
 .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   min-height: 104px;
 }
 
-@media (max-width: 1350px) {
-  .wraper {
-    min-width: 1200px;
-  }
+/*---------------------------------------Главная без меню*/
+.home-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1000px;
+  position: relative;
 }
 
-@media (max-width: 1000px) {
-  .home-page {
-    min-width: 800px;
-  }
-}
-
+/*----------титулка*/
 .home-title {
   position: absolute;
   top: 0;
   left: 0;
   color: #f44647;
-  font-size: 70px;
-  max-width: 600px;
-  margin-left: 50px;
+  font-size: 20px;
+  margin-left: 20px;
+  max-width: 400px;
 }
 
-@media (max-width: 1300px) {
-  .home-title {
-    font-size: 60px;
-    max-width: 500px;
-  }
-}
-
-@media (max-width: 1000px) {
-  .home-title {
-    font-size: 40px;
-    max-width: 300px;
-  }
-}
-
+/*----------картинка*/
 .home-img {
-  margin-left: 400px;
+  margin-left: 140px;
 }
 
-@media (max-width: 1300px) {
-  .home-img {
-    margin-left: 300px;
-  }
-}
-
-@media (max-width: 1000px) {
-  .home-img {
-    margin-left: 200px;
-  }
-}
-
-.home-img img {
-  width: 600px;
-  height: 500px;
+/*----------------------------------------Главная Меню*/
+.navigation-menu {
+  position: fixed;
+  margin-top: 50px;
+  margin-left: 830px;
 }
 
 .menu {
-  margin: 30px 0px 0px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-@media (max-width: 1000px) {
-  .menu {
-    font-size: 24px;
-  }
-}
-
-.menu-nav {
-  position: fixed;
-}
-
-.nav-title {
-  margin-left: 39px;
+/*--------титулка меню*/
+.menu-title-link {
+  margin: 20px 0px 0px 69px;
   letter-spacing: 5px;
   color: black;
   display: -webkit-box;
@@ -111,26 +147,92 @@ a {
   display: flex;
 }
 
-.nav-list {
-  list-style-type: none;
-  margin-top: 50px;
-  text-align: left;
+/*-------список меню*/
+.menu-list {
+  margin: 30px 0px 0px 30px;
 }
 
-.nav-item:not(:last-child) {
+/*------маркер меню*/
+.menu-item {
+  list-style-type: none;
+}
+
+.menu-item:not(:last-child) {
   margin-bottom: 15px;
 }
 
-.nav-link {
-  color: #414040;
+/*------пункты меню*/
+.menu-link {
+  color: #929292;
 }
 
-.form-meet {
-  background-color: red;
-  width: 1700px;
+/*-------------------------------------------страница 2:Form*/
+.form-container {
+  max-width: 1000px;
+}
+
+.form-page
+.form-title {
+  margin: 100px 50px 70px 0px;
+  text-align: center;
+}
+
+/*-------------------таблица формы*/
+.form-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*-------------------ряд формы*/
+.form-row {
+  margin-bottom: 40px;
+}
+
+/*-------------------поле ввода*/
+.row-field, .select-field, .text-field, .button {
+  width: 580px;
+  height: 40px;
+  font-size: 16px;
+  background-color: inherit;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: 3px solid black;
+  color: #757575;
+}
+
+.select-field {
+  width: 588px;
+}
+
+.text-field {
+  height: 100px;
+}
+
+/*-------------------кнопка формы*/
+.button {
+  cursor: pointer;
+  height: 60px;
+  border: 3px solid black;
+  color: black;
+  font-weight: bolder;
+  letter-spacing: 5px;
+}
+
+/*-------------------------------------------страница 3:Heare I'm*/
+.aboutMe-container {
+  max-width: 1000px;
+  width: 700px;
   height: 1000px;
+  background-color: yellow;
+  margin-top: 70px;
 }
 
+.aboutMe-page
 a:hover {
   color: #f44647;
   -webkit-transition: 0.3s ease-out;
