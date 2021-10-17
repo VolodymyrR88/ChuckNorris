@@ -224,15 +224,43 @@ a {
 }
 
 /*-------------------------------------------страница 3:Heare I'm*/
-.aboutMe-container {
+.Joke-container {
   max-width: 1000px;
-  width: 700px;
-  height: 1000px;
-  background-color: yellow;
-  margin-top: 70px;
 }
 
-.aboutMe-page
+.Joke-page {
+  margin: 100px 0px 70px 0px;
+  text-align: center;
+}
+
+/*---------------картинка страници*/
+.Joke-chuck {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Joke-img {
+  width: 600px;
+}
+
+/*-----------блок шутки*/
+.api {
+  margin: 50px 0;
+}
+
+/*------------поле шутки*/
+.api-frame {
+  max-width: 580px;
+  margin: 0px 0px 50px 210px;
+  border: none;
+}
+
+/*-----------кнопка*/
+.api-button
 a:hover {
   color: #f44647;
   -webkit-transition: 0.3s ease-out;
