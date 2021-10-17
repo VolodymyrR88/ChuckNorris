@@ -34,7 +34,7 @@
                   <a class="menu-link" href="#form">Let's get to know you</a>
                 </li>
                 <li class="menu-item">
-                  <a class="menu-link" href="#aboutMe">Hear I am</a>
+                  <a class="menu-link" href="#Chuck'sJokes">Chuck's Jokes</a>
                 </li>
                 <li class="menu-item">
                   <a class="menu-link" href="">My favorite pictures</a>
@@ -102,9 +102,34 @@
           </div>
         </div>
       </div>
-      <div id="aboutMe" class="aboutMe-container">
-        <div class="aboutMe-container -container">
-          <div class="aboutMe-page"></div>
+      <div id="Chuck'sJokes" class="Joke-container">
+        <div class="Joke-container -container">
+          <div class="Joke-page">
+            <div class="Joke-chuck">
+              <img class="Joke-img" src="img/chuckJoke.jpg" alt="Chuck Jokes" />
+            </div>
+            <div class="api">
+              <div class="api-frame">
+                <iframe name="joke" width="100%" height="100px" scrolling="no">
+                </iframe>
+              </div>
+              <form
+                name="joke"
+                method="GET"
+                action="https://api.chucknorris.io/jokes/random"
+                target="joke"
+              >
+                <div class="api-button">
+                  <input
+                    class="button"
+                    type="submit"
+                    name="send"
+                    value="PUSH"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
