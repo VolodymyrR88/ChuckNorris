@@ -9,69 +9,6 @@ body {
 a {
 	text-decoration: none;
 }
-/*---------контейнер*/
-.-container{
-	max-width: 1400px;
-}
-/*-------------------Media*/
-/*@media screen and (min-width: 320px) and (max-width: 479px) {
-	.header-container.-container {max-width: 120px;
-}
-	.navigation-menu{
-		min-width: 400px;
-		margin: 0;
-		font-size: 10px;
-	}
-	.home-img {
-	margin-top: 200px;
-}
-}
-@media screen and (min-width: 480px) and (max-width: 639px) {
-	.header-container.-container {max-width: 480px;
-}
-	.navigation-menu{
-		font-size: 12px;
-		min-width: 400px;
-		margin: 0;
-	}
-	.home-img {
-	margin-top: 200px;
-
-}
-}
-@media screen and (min-width: 640px) and (max-width: 767px) {
-	.header-container.-container {max-width: 640px;
-}
-	.navigation-menu{
-		font-size: 12px;
-		min-width: 400px;
-		margin: 0;
-	}
-}
-@media screen and (min-width: 768px) and (max-width: 799px) {
-	.header-container.-container {
-		max-width: 768px;
-	}
-	.navigation-menu{
-		font-size: 12px;
-		min-width: 400px;
-		margin: 0;
-	}
-}
-@media screen and (min-width: 800px) and (max-width: 1023px) {
-	.header-container.-container {
-		max-width: 780px;
-	}
-	.navigation-menu{
-		min-width: 400px;
-		margin: 0;
-	}
-}
-@media screen and (min-width: 1024px) and (max-width: 1681px) {
-	.header-container.-container {
-		max-width: 1400px;
-}
-}*/
 
 /*-------------------Полотно*/
 .wraper {
@@ -81,17 +18,16 @@ a {
 /*----------------------------------------------------страница 1:Home*/
 .header-container {
 	display: flex;
+	flex-direction: row;
 	flex-wrap: wrap;
-	min-height: 104px;
-}
-.header-container.-container {
+	margin-top: 20px;
 }
 
 /*---------------------------------------Главная без меню*/
 .home-page {
 	display: flex;
 	flex-wrap: wrap;
-	max-width:1000px;
+	max-width: 900px;
 	position: relative;
 }
 /*----------титулка*/
@@ -100,7 +36,7 @@ a {
 	top: 0;
 	left: 0;
 	color: #f44647;
-	font-size: 20px;
+	font-size: 45px;
 	margin-left: 20px;
 	max-width: 400px;
 }
@@ -113,19 +49,24 @@ a {
 .navigation-menu{
 	position: fixed;
 	margin-top: 50px;
-	margin-left: 830px;
-}
-.menu{	
+	padding-right: 200px;
+	right: 0;
+	top: 50;
 	display: flex;
-	flex-direction: column;
 	flex-wrap: wrap;
+	flex-direction: column;
+}
+.navigation-menu a:hover{
+	color:#f44647 ;
+	transition: 0.3s ease-out;
 }
 /*--------титулка меню*/
 .menu-title-link {
-	margin: 20px 0px 0px 69px;
+	margin-left: 60px;
 	letter-spacing: 5px;
 	color: black;
-	display: flex;
+	text-decoration: none;
+	font-weight: bold;
 }
 /*-------список меню*/
 .menu-list {
@@ -134,26 +75,24 @@ a {
 /*------маркер меню*/
 .menu-item {
 	list-style-type: none;
-}
-.menu-item:not(:last-child){
 	margin-bottom: 15px;
 }
 /*------пункты меню*/
 .menu-link {
 	color: rgb(146, 146, 146);
+	text-decoration: none;
+	font-weight: bold;
 }
 
 /*-------------------------------------------страница 2:Form*/
 .form-container {
-	max-width: 1000px;
+	max-width: 900px;
 }
-.form-page 
 /*-------------------титулка*/
 .form-title {
 	margin: 100px 50px 70px 0px;
 	text-align: center;
-}
-.title {
+	font-weight: bold;
 }
 /*-------------------таблица формы*/
 .form-table {
@@ -163,6 +102,11 @@ a {
 /*-------------------ряд формы*/
 .form-row {
 	margin-bottom: 40px;
+}
+.form-row span{
+	color: black;
+	font-weight: bold;
+	margin-left: 5px;
 }
 /*-------------------поле ввода*/
 .row-field, .select-field, .text-field, .button {
@@ -194,19 +138,14 @@ a {
 
 /*-------------------------------------------страница 3:Heare I'm*/
 .Joke-container {
-	max-width: 1000px;
-} 
-.Joke-page {
+	max-width: 900px;
 	margin: 100px 0px 70px 0px;
 	text-align: center;
-}
+} 
 /*---------------картинка страници*/
-.Joke-chuck {
-	display: flex;
-	justify-content: center;
-}
 .Joke-img {
 	width: 600px;
+	justify-content: center;
 }
 /*-----------блок шутки*/
 .api {
@@ -215,13 +154,44 @@ a {
 /*------------поле шутки*/
 .api-frame {
 	max-width: 580px;
-	margin: 0px 0px 50px 210px;
+	margin-bottom: 50px;
 	border: none;
 }
-/*-----------кнопка*/
-.api-button 
-/*----навидение на ссылки*/
-a:hover{
-	color:#f44647 ;
-	transition: 0.3s ease-out;
+/*----------------------------------------Страница4:Pictures*/
+.pictures {}
+
+.pictures-container {
+	text-align: center;
+	max-width: 900px;
+	margin-top: 100px;
+}
+
+.slider {
+	width: 400px;
+	height: 400px;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.slider-line {
+	width: 2800px;
+	height: 400px;
+	display: flex;
+	position: relative;
+	left: 0;
+	transition: all ease 1s;
+}
+.buttons {
+	margin: 20px;
+}
+.slider-prev, .slider-next  {
+	cursor: pointer;
+	height: 40px;
+	border: 3px solid black;
+	color: black;
+	font-weight: bolder;	
+	letter-spacing: 5px;
+	background-color: inherit;
+	margin: 5px;
 }
