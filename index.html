@@ -5,134 +5,181 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <title>ChuckNorris</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <div class="wraper">
-      <header id="home" class="header">
-        <div class="header-container -container">
-          <div class="home-page">
-            <div class="home-title">
-              <h1>
-                Hello visitor! <br />
-                You are on my web site and you know who I am!
-              </h1>
-            </div>
-            <div class="home-img">
-              <img src="img/ChuckNorris.png" alt="ChuckNorris" />
-            </div>
-          </div>
-          <div class="navigation-menu">
-            <nav class="menu">
-              <div class="menu-title">
-                <a class="menu-title-link" href="#home">CHUCK NORRIS</a>
-              </div>
-              <ul class="menu-list">
-                <li class="menu-item">
-                  <a class="menu-link" href="#home">Home</a>
-                </li>
-                <li class="menu-item">
-                  <a class="menu-link" href="#form">Let's get to know you</a>
-                </li>
-                <li class="menu-item">
-                  <a class="menu-link" href="#Chuck'sJokes">Chuck's Jokes</a>
-                </li>
-                <li class="menu-item">
-                  <a class="menu-link" href="">My favorite pictures</a>
-                </li>
-                <li class="menu-item">
-                  <a class="menu-link" href="">Read about my favorite movies</a>
-                </li>
-                <li class="menu-item">
-                  <a class="menu-link" href="">Look at my favorite movie</a>
-                </li>
-                <li class="menu-item">
-                  <a class="menu-link" href="">Something else</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+      <header id="home" class="header-container">
+        <div class="home-page">
+            <h1 class="home-title">
+              Hello visitor! <br />
+              You are on my web site and you know who I am!
+            </h1>
+            <img class="home-img" src="img/ChuckNorris.png" alt="ChuckNorris" width="700px" height="640px"  />
+        </div>
+        <div class="navigation-menu">
+              <h4><a class="menu-title-link" href="#home">CHUCK NORRIS</a></h4>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <a class="menu-link" href="#home">Home</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="#form">Let's get to know you</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="#Chuck'sJokes">Chuck's Jokes</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="#pictures">My favorite pictures</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="">Read about my favorite movies</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="">Look at my favorite movie</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="">Something else</a>
+              </li>
+            </ul>
         </div>
       </header>
       <div id="form" class="form-container">
-        <div class="form-container -container">
-          <div class="form-page">
-            <div class="form-title">
-              <h2 class="title">Let's get to know you</h2>
-            </div>
-            <div class="form-table">
-              <form name="feedback" method="POST" action="form.php">
-                <p class="form-row">
-                  <input
-                    class="row-field"
-                    type="text"
-                    name="name"
-                    placeholder="NAME"
-                  />
-                </p>
-                <p class="form-row">
-                  <input
-                    class="row-field"
-                    type="text"
-                    name="email"
-                    placeholder="EMAIL"
-                  />
-                </p>
-                <p class="form-row">
-                  Choose your favorit actor: <br />
-                  <select class="select-field" name="actor">
-                    <optgroup label="Best actor">
-                      <option value="cn" selected>Chuck the best!</option>
-                      <option value="CN">Of course Chuck Norris</option>
-                      <option value="Ch">
-                        Are you kidding me? Only Chuck Norris!
-                      </option>
-                    </optgroup>
-                  </select>
-                </p>
-                <p class="form-row">
-                  <textarea
-                    class="text-field"
-                    name="message"
-                    placeholder="Write me something"
-                  ></textarea>
-                </p>
-                <input class="button" type="submit" name="send" value="SEND" />
-              </form>
-            </div>
+            <h4 class="form-title">Let's get to know you</h4>
+          <div class="form-table">
+            <form class="form" name="feedback" method="POST" action="form.php">
+              <p class="form-row">
+                <input
+                  class="row-field"
+                  type="text"
+                  name="name"
+                  placeholder="NAME"
+                />
+              </p>
+              <p class="form-row">
+                <input
+                  class="row-field"
+                  type="text"
+                  name="email"
+                  placeholder="EMAIL"
+                />
+              </p>
+              <p class="form-row">
+                <span> Choose your favorit actor:</span> <br />
+                <select class="select-field" name="actor">
+                  <optgroup label="Best actor">
+                    <option value="cn" selected>Chuck the best!</option>
+                    <option value="CN">Of course Chuck Norris</option>
+                    <option value="Ch">
+                      Are you kidding me? Only Chuck Norris!
+                    </option>
+                  </optgroup>
+                </select>
+              </p>
+              <p class="form-row">
+                <textarea
+                  class="text-field"
+                  name="message"
+                  placeholder="Write me something"
+                ></textarea>
+              </p>
+              <input class="button" type="submit" name="send" value="SEND" />
+            </form>
           </div>
-        </div>
       </div>
       <div id="Chuck'sJokes" class="Joke-container">
-        <div class="Joke-container -container">
-          <div class="Joke-page">
-            <div class="Joke-chuck">
-              <img class="Joke-img" src="img/chuckJoke.jpg" alt="Chuck Jokes" />
-            </div>
-            <div class="api">
-              <div class="api-frame">
-                <iframe name="joke" width="100%" height="100px" scrolling="no">
-                </iframe>
-              </div>
-              <form
-                name="joke"
-                method="GET"
-                action="https://api.chucknorris.io/jokes/random"
-                target="joke"
-              >
-                <div class="api-button">
-                  <input
-                    class="button"
-                    type="submit"
-                    name="send"
-                    value="PUSH"
-                  />
-                </div>
-              </form>
-            </div>
+            <img class="Joke-img" src="img/chuckJoke.jpg" alt="Chuck Jokes" />
+          <div class="api">
+              <iframe class="api-frame" name="joke" width="600px" height="auto"> </iframe>
+            <form
+              name="joke"
+              method="GET"
+              action="https://api.chucknorris.io/jokes/random"
+              target="joke"
+            >
+                <input class="button" type="submit" name="send" value="PUSH" />
+            </form>
+          </div>
+        </div>
+      <div id="pictures" class="pictures-container">
+        <img
+          src="img/chuckFoto.jpg"
+          alt="Chuck Foto"
+          width="600px"
+          height="260px"
+        />
+        <div class="slider">
+          <div class="slider-line">
+            <img
+              src="img/chuck-s1.jpg"
+              alt="chuck's foto"
+              width="400px"
+              height="400px"
+            />
+            <img
+              src="img/chuck-s2.jpg"
+              alt="chuck's foto"
+              width="400px"
+              height="400px"
+            />
+            <img
+              src="img/chuck-s3.jpg"
+              alt="chuck's foto"
+              width="400px"
+              height="400px"
+            />
+            <img
+              src="img/chuck-s4.jpg"
+              alt="chuck's foto"
+              width="400px"
+              height="400px"
+            />
+            <img
+              src="img/chuck-s5.jpg"
+              alt="chuck's foto"
+              width="400px"
+              height="400px"
+            />
+            <img
+              src="img/chuck-s6.jpg"
+              alt="chuck's foto"
+              width="400px"
+              height="400px"
+            />
+            <img
+              src="img/chuck-s7.jpg"
+              alt="chuck's foto"
+              width="400px"
+              height="400px"
+            />
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="slider-prev">PREV</button>
+          <button class="slider-next">NEXT</button>
+        </div>
+      </div>
+      <div id="movies" class="movies-container">
+          <div class="movies-table">
+            <div class="col1"></div>
+            <div class="col2"></div>
+            <div class="col3"></div>
           </div>
         </div>
       </div>
     </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/script.js"></script>
   </body>
 </html>
