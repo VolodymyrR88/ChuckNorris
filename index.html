@@ -53,7 +53,7 @@
               <a class="menu-link" href="#film">Look at my favorite movie</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link" href="">Something else</a>
+              <a class="menu-link" href="#facts">Facts about Chuck Norris</a>
             </li>
           </ul>
         </div>
@@ -107,7 +107,7 @@
           <iframe class="api-frame" name="joke" width="600px" height="auto">
           </iframe>
           <form
-            name="joke"
+            name="jokes"
             method="GET"
             action="https://api.chucknorris.io/jokes/random"
             target="joke"
@@ -176,6 +176,7 @@
       </div>
       <div id="movies" class="movies-container">
         <div class="container">
+          <h4 class="movies-title">About my favorite movie</h4>
           <div class="row">
             <div class="col-9">The Way Of The Dragon</div>
             <div class="col-6">
@@ -203,8 +204,6 @@
               />
             </div>
           </div>
-        </div>
-        <div class="container">
           <div class="row">
             <div class="col-9">Lone Wolf McQuade</div>
             <div class="col-6">
@@ -231,8 +230,6 @@
               />
             </div>
           </div>
-        </div>
-        <div class="container">
           <div class="row">
             <div class="col-9">Code Of Silence</div>
             <div class="col-6">
@@ -255,7 +252,68 @@
           </div>
         </div>
       </div>
-      <div id="film" class="film-container"></div>
+      <div id="film" class="film-container">
+        <div class="container">
+          <h4 class="movies-title">Movie with me</h4>
+        </div>
+        <div class="movies-frame">
+          <iframe
+            width="600"
+            height="315"
+            src="https://www.youtube.com/embed/2UwffdNkaOs"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <div id="facts" class="facts-container">
+        <div class="container">
+          <h4 class="facts-title">Facts about Chuck Norris</h4>
+        </div>
+        <ul class="accordione">
+          <li>
+            <div class="accordione-header">FACT</div>
+            <div class="accordione-body">
+              Once Chuck Norris looked at the sun for several hours ... the sun
+              could not stand it and blinked.
+            </div>
+          </li>
+          <li>
+            <div class="accordione-header">FACT</div>
+            <div class="accordione-body">
+              Chuck Norris is the only person in the world to beat a wall in
+              tennis.
+            </div>
+          </li>
+          <li>
+            <div class="accordione-header">FACT</div>
+            <div class="accordione-body">
+              Chuck Norris cried once in his life. On that fateful day, he
+              kicked himself with a roundhouse kick.
+            </div>
+          </li>
+          <li>
+            <div class="accordione-header">FACT</div>
+            <div class="accordione-body">
+              Chuck Norris doesn't just walk on the ground - he rotates the
+              planet in its orbit.
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div id="" class="goodbye">
+        <h2>Thanks for visiting us</h2>
+        <iframe
+          src="https://giphy.com/embed/ylp4hl9xEaWyc"
+          width="600"
+          height="271"
+          frameborder="0"
+          class="goodbye-frame"
+          allowfullscreen
+        ></iframe>
+      </div>
     </div>
     <!-- JavaScript Bundle with Popper -->
     <script
@@ -263,6 +321,7 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
