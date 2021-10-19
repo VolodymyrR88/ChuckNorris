@@ -17,96 +17,105 @@
     <div class="wraper">
       <header id="home" class="header-container">
         <div class="home-page">
-            <h1 class="home-title">
-              Hello visitor! <br />
-              You are on my web site and you know who I am!
-            </h1>
-            <img class="home-img" src="img/ChuckNorris.png" alt="ChuckNorris" width="700px" height="640px"  />
+          <h1 class="home-title">
+            Hello visitor! <br />
+            You are on my web site and you know who I am!
+          </h1>
+          <img
+            class="home-img"
+            src="img/ChuckNorris.png"
+            alt="ChuckNorris"
+            width="700px"
+            height="640px"
+          />
         </div>
         <div class="navigation-menu">
-              <h4><a class="menu-title-link" href="#home">CHUCK NORRIS</a></h4>
-            <ul class="menu-list">
-              <li class="menu-item">
-                <a class="menu-link" href="#home">Home</a>
-              </li>
-              <li class="menu-item">
-                <a class="menu-link" href="#form">Let's get to know you</a>
-              </li>
-              <li class="menu-item">
-                <a class="menu-link" href="#Chuck'sJokes">Chuck's Jokes</a>
-              </li>
-              <li class="menu-item">
-                <a class="menu-link" href="#pictures">My favorite pictures</a>
-              </li>
-              <li class="menu-item">
-                <a class="menu-link" href="">Read about my favorite movies</a>
-              </li>
-              <li class="menu-item">
-                <a class="menu-link" href="">Look at my favorite movie</a>
-              </li>
-              <li class="menu-item">
-                <a class="menu-link" href="">Something else</a>
-              </li>
-            </ul>
+          <h4><a class="menu-title-link" href="#home">CHUCK NORRIS</a></h4>
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a class="menu-link" href="#home">Home</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#form">Let's get to know you</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#Chuck'sJokes">Chuck's Jokes</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#pictures">Funny pictures with me</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#movies"
+                >Read about my favorite movies</a
+              >
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#film">Look at my favorite movie</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="">Something else</a>
+            </li>
+          </ul>
         </div>
       </header>
       <div id="form" class="form-container">
-            <h4 class="form-title">Let's get to know you</h4>
-          <div class="form-table">
-            <form class="form" name="feedback" method="POST" action="form.php">
-              <p class="form-row">
-                <input
-                  class="row-field"
-                  type="text"
-                  name="name"
-                  placeholder="NAME"
-                />
-              </p>
-              <p class="form-row">
-                <input
-                  class="row-field"
-                  type="text"
-                  name="email"
-                  placeholder="EMAIL"
-                />
-              </p>
-              <p class="form-row">
-                <span> Choose your favorit actor:</span> <br />
-                <select class="select-field" name="actor">
-                  <optgroup label="Best actor">
-                    <option value="cn" selected>Chuck the best!</option>
-                    <option value="CN">Of course Chuck Norris</option>
-                    <option value="Ch">
-                      Are you kidding me? Only Chuck Norris!
-                    </option>
-                  </optgroup>
-                </select>
-              </p>
-              <p class="form-row">
-                <textarea
-                  class="text-field"
-                  name="message"
-                  placeholder="Write me something"
-                ></textarea>
-              </p>
-              <input class="button" type="submit" name="send" value="SEND" />
-            </form>
-          </div>
+        <h4 class="form-title">Let's get to know you</h4>
+        <div class="form-table">
+          <form class="form" name="feedback" method="POST" action="form.php">
+            <p class="form-row">
+              <input
+                class="row-field"
+                type="text"
+                name="name"
+                placeholder="NAME"
+              />
+            </p>
+            <p class="form-row">
+              <input
+                class="row-field"
+                type="text"
+                name="email"
+                placeholder="EMAIL"
+              />
+            </p>
+            <p class="form-row">
+              <span> Choose your favorit actor:</span> <br />
+              <select class="select-field" name="actor">
+                <optgroup label="Best actor">
+                  <option value="cn" selected>Chuck the best!</option>
+                  <option value="CN">Of course Chuck Norris</option>
+                  <option value="Ch">
+                    Are you kidding me? Only Chuck Norris!
+                  </option>
+                </optgroup>
+              </select>
+            </p>
+            <p class="form-row">
+              <textarea
+                class="text-field"
+                name="message"
+                placeholder="Write me something"
+              ></textarea>
+            </p>
+            <input class="button" type="submit" name="send" value="SEND" />
+          </form>
+        </div>
       </div>
       <div id="Chuck'sJokes" class="Joke-container">
-            <img class="Joke-img" src="img/chuckJoke.jpg" alt="Chuck Jokes" />
-          <div class="api">
-              <iframe class="api-frame" name="joke" width="600px" height="auto"> </iframe>
-            <form
-              name="joke"
-              method="GET"
-              action="https://api.chucknorris.io/jokes/random"
-              target="joke"
-            >
-                <input class="button" type="submit" name="send" value="PUSH" />
-            </form>
-          </div>
+        <img class="Joke-img" src="img/chuckJoke.jpg" alt="Chuck Jokes" />
+        <div class="api">
+          <iframe class="api-frame" name="joke" width="600px" height="auto">
+          </iframe>
+          <form
+            name="joke"
+            method="GET"
+            action="https://api.chucknorris.io/jokes/random"
+            target="joke"
+          >
+            <input class="button" type="submit" name="send" value="PUSH" />
+          </form>
         </div>
+      </div>
       <div id="pictures" class="pictures-container">
         <img
           src="img/chuckFoto.jpg"
@@ -166,13 +175,87 @@
         </div>
       </div>
       <div id="movies" class="movies-container">
-          <div class="movies-table">
-            <div class="col1"></div>
-            <div class="col2"></div>
-            <div class="col3"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-9">The Way Of The Dragon</div>
+            <div class="col-6">
+              If Lone Wolf McQuade brought Chuck Norris (the first westerner
+              ever to hold the rank of an 8th degree black belt in Taekwondo)
+              into the mainstream as a certified action star, then The Way of
+              the Dragon put him on the map as America's answer or equivalent to
+              Bruce Lee. The Way of the Dragon is about Tang Yung (Bruce Lee),
+              who visits his relatives in Italy and has to defend them against
+              neighborhood gangsters. After he beats all the local mobsters, the
+              crime boss hires henchmen from abroad, including Colt, depicted by
+              Chuck Norris. Making his film debut, the sight of Norris stepping
+              outside of the airport with long sideburns, large shades with gold
+              rims, a long collard colorful shirt with a beautiful big bronze
+              belt buckle, and a briefcase is pretty iconic. Norris and Lee's
+              epic fight scene is considered by many to be the greatest move
+              fight ever.
+            </div>
+            <div class="col-4">
+              <img
+                src="img/chuck-norris-and-bruce-lee-in-the-way-of-the-dragon.jpg"
+                alt="The Way Of The Dragon"
+                width="350"
+                height="200"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-9">Lone Wolf McQuade</div>
+            <div class="col-6">
+              Lone Wolf McQuade stars Chuck Norris and Kung Fu's David Carradine
+              alongside an all-star line-up including Barbara Carrera and Leon
+              Isaac Kennedy. Norris plays a Texas Ranger who must stop a drug
+              lord who has the same martial arts skillset as him, while they
+              also compete for the same woman. The final fight scene between
+              Norris and Carradine, although very good and avoided using stunt
+              doubles, is not as historical as his 1973 epic battle scene with
+              Bruce Lee in The Way of the Dragon. But it is very intriguing to
+              see Norris fight the man who beat out Lee for the role of Kwai
+              Chang Caine in the television series, Kung Fu. Lone Wolf McQuade
+              elevated Norris to a bonafide action star and also served as the
+              inspiration for his television show ten years later, Walker, Texas
+              Ranger.
+            </div>
+            <div class="col-4">
+              <img
+                src="img/chuck-norris-in-lone-wolf-mcquade.jpg"
+                alt="Lone Wolf McQuade"
+                width="350"
+                height="200"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-9">Code Of Silence</div>
+            <div class="col-6">
+              This film is a departure from Norris's traditional martial arts
+              movies. Although it has plenty of action, Code of Silence focuses
+              more on guns, car chases, and explosions rather than the
+              hand-to-hand combat that audiences had grown accustomed to. Norris
+              plays a Chicago cop caught between a rock and a hard place when he
+              has to stop a gang war while having to take down a careless cop
+              who caused a divide in the department.
+            </div>
+            <div class="col-4">
+              <img
+                src="img/chuck-norris-in-code-of-silence.jpg"
+                alt="Code Of Silence"
+                width="350"
+                height="200"
+              />
+            </div>
           </div>
         </div>
       </div>
+      <div id="film" class="film-container"></div>
     </div>
     <!-- JavaScript Bundle with Popper -->
     <script
