@@ -21,6 +21,7 @@ a {
 	flex-direction: row;
 	flex-wrap: wrap;
 	margin-top: 20px;
+	padding: 40px;
 }
 
 /*---------------------------------------Главная без меню*/
@@ -49,11 +50,8 @@ a {
 .navigation-menu{
 	position: fixed;
 	margin-top: 50px;
-	padding-right: 200px;
-	right: 0;
-	top: 50;
+	margin-left: 800px;
 	display: flex;
-	flex-wrap: wrap;
 	flex-direction: column;
 }
 .navigation-menu a:hover{
@@ -62,6 +60,7 @@ a {
 }
 /*--------титулка меню*/
 .menu-title-link {
+	display: flex;
 	margin-left: 60px;
 	letter-spacing: 5px;
 	color: black;
@@ -194,4 +193,24 @@ a {
 	letter-spacing: 5px;
 	background-color: inherit;
 	margin: 5px;
+}
+/*---------------------------------------------Страница5:article*/
+.movies-container {
+	max-width: 900px;
+	margin-top: 100px;
+}
+.container {
+	margin: 20px;
+}
+
+.col-9 {
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.film-container {
+	max-width: 900px;
+	width: 900px;
+	height: 700px;
+	background-color: yellow;
 }
