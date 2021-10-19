@@ -16,3 +16,25 @@ document.querySelector('.slider-prev').addEventListener('click', function () {
 	}
 	sliderLine.style.left = -offset + 'px';
 });
+
+var accordione = function () {
+	var data = $(".accordione").attr("data-accordione");
+
+	$(".accordione-header").on("click", function () {
+		if (data === "close") {
+			$(".accordione-body").slideUp();
+			if ($(this).hasClass("active")) {
+				$(this).toggleClass("active");
+			}
+			else {
+				$(".accordione-header").removeClass("active");
+				$(this).toggleClass("active");
+			}
+		}
+		else {
+			$(this).toggleClass("active");
+		}
+		$(this).next(".accordione-body").not(":animated").slideToggle();
+	})
+}
+accordione();
