@@ -12,6 +12,70 @@ a {
   text-decoration: none;
 }
 
+/*---------контейнер*/
+.-container {
+  max-width: 1400px;
+}
+
+/*-------------------Media*/
+/*@media screen and (min-width: 320px) and (max-width: 479px) {
+	.header-container.-container {max-width: 120px;
+}
+	.navigation-menu{
+		min-width: 400px;
+		margin: 0;
+		font-size: 10px;
+	}
+	.home-img {
+	margin-top: 200px;
+}
+}
+@media screen and (min-width: 480px) and (max-width: 639px) {
+	.header-container.-container {max-width: 480px;
+}
+	.navigation-menu{
+		font-size: 12px;
+		min-width: 400px;
+		margin: 0;
+	}
+	.home-img {
+	margin-top: 200px;
+
+}
+}
+@media screen and (min-width: 640px) and (max-width: 767px) {
+	.header-container.-container {max-width: 640px;
+}
+	.navigation-menu{
+		font-size: 12px;
+		min-width: 400px;
+		margin: 0;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 799px) {
+	.header-container.-container {
+		max-width: 768px;
+	}
+	.navigation-menu{
+		font-size: 12px;
+		min-width: 400px;
+		margin: 0;
+	}
+}
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+	.header-container.-container {
+		max-width: 780px;
+	}
+	.navigation-menu{
+		min-width: 400px;
+		margin: 0;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1681px) {
+	.header-container.-container {
+		max-width: 1400px;
+}
+}*/
 /*-------------------Полотно*/
 .wraper {
   overflow: hidden;
@@ -22,13 +86,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 20px;
+  min-height: 104px;
 }
 
 /*---------------------------------------Главная без меню*/
@@ -38,7 +98,7 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 900px;
+  max-width: 1000px;
   position: relative;
 }
 
@@ -48,7 +108,7 @@ a {
   top: 0;
   left: 0;
   color: #f44647;
-  font-size: 45px;
+  font-size: 20px;
   margin-left: 20px;
   max-width: 400px;
 }
@@ -62,33 +122,29 @@ a {
 .navigation-menu {
   position: fixed;
   margin-top: 50px;
-  padding-right: 200px;
-  right: 0;
-  top: 50;
+  margin-left: 830px;
+}
+
+.menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.navigation-menu a:hover {
-  color: #f44647;
-  -webkit-transition: 0.3s ease-out;
-  transition: 0.3s ease-out;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 /*--------титулка меню*/
 .menu-title-link {
-  margin-left: 60px;
+  margin: 20px 0px 0px 69px;
   letter-spacing: 5px;
   color: black;
-  text-decoration: none;
-  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /*-------список меню*/
@@ -99,26 +155,26 @@ a {
 /*------маркер меню*/
 .menu-item {
   list-style-type: none;
+}
+
+.menu-item:not(:last-child) {
   margin-bottom: 15px;
 }
 
 /*------пункты меню*/
 .menu-link {
   color: #929292;
-  text-decoration: none;
-  font-weight: bold;
 }
 
 /*-------------------------------------------страница 2:Form*/
 .form-container {
-  max-width: 900px;
+  max-width: 1000px;
 }
 
-/*-------------------титулка*/
+.form-page
 .form-title {
   margin: 100px 50px 70px 0px;
   text-align: center;
-  font-weight: bold;
 }
 
 /*-------------------таблица формы*/
@@ -134,12 +190,6 @@ a {
 /*-------------------ряд формы*/
 .form-row {
   margin-bottom: 40px;
-}
-
-.form-row span {
-  color: black;
-  font-weight: bold;
-  margin-left: 5px;
 }
 
 /*-------------------поле ввода*/
@@ -175,17 +225,26 @@ a {
 
 /*-------------------------------------------страница 3:Heare I'm*/
 .Joke-container {
-  max-width: 900px;
+  max-width: 1000px;
+}
+
+.Joke-page {
   margin: 100px 0px 70px 0px;
   text-align: center;
 }
 
 /*---------------картинка страници*/
-.Joke-img {
-  width: 600px;
+.Joke-chuck {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.Joke-img {
+  width: 600px;
 }
 
 /*-----------блок шутки*/
@@ -196,48 +255,14 @@ a {
 /*------------поле шутки*/
 .api-frame {
   max-width: 580px;
-  margin-bottom: 50px;
+  margin: 0px 0px 50px 210px;
   border: none;
 }
 
-/*----------------------------------------Страница4:Pictures*/
-.pictures-container {
-  text-align: center;
-  max-width: 900px;
-  margin-top: 100px;
-}
-
-.slider {
-  width: 400px;
-  height: 400px;
-  overflow: hidden;
-  margin: 0 auto;
-  margin-top: 50px;
-}
-
-.slider-line {
-  width: 2800px;
-  height: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  left: 0;
-  -webkit-transition: all ease 1s;
-  transition: all ease 1s;
-}
-
-.buttons {
-  margin: 20px;
-}
-
-.slider-prev, .slider-next {
-  cursor: pointer;
-  height: 40px;
-  border: 3px solid black;
-  color: black;
-  font-weight: bolder;
-  letter-spacing: 5px;
-  background-color: inherit;
-  margin: 5px;
+/*-----------кнопка*/
+.api-button
+a:hover {
+  color: #f44647;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
 }
